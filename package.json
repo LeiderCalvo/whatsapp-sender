@@ -1,0 +1,19 @@
+{
+  "name": "whatsapp-sender",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "all": "node index.js all",
+    "cm:birthdays": "node index.js cm:birthdays",
+    "personal:love": "node index.js personal:love"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.23.0"
+  }
+}
