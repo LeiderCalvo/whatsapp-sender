@@ -1,3 +1,14 @@
-2024/11/13-14:23:54.562 a69 Reusing MANIFEST /home/runner/work/whatsapp-sender/whatsapp-sender/.wwebjs_auth/session/Default/Local Storage/leveldb/MANIFEST-000001
-2024/11/13-14:23:54.563 a69 Recovering log #42
-2024/11/13-14:23:54.563 a69 Reusing old log /home/runner/work/whatsapp-sender/whatsapp-sender/.wwebjs_auth/session/Default/Local Storage/leveldb/000042.log 
+2024/11/14-14:25:13.720 aa2 Reusing MANIFEST /home/runner/work/whatsapp-sender/whatsapp-sender/.wwebjs_auth/session/Default/Local Storage/leveldb/MANIFEST-000001
+2024/11/14-14:25:13.720 aa2 Recovering log #42
+2024/11/14-14:25:13.721 aa2 Level-0 table #45: started
+2024/11/14-14:25:13.725 aa2 Level-0 table #45: 15690 bytes OK
+2024/11/14-14:25:13.726 aa2 Delete type=0 #42
+2024/11/14-14:25:13.727 aa3 Compacting 4@0 + 1@1 files
+2024/11/14-14:25:13.728 aa3 Generated table #47@0: 275 keys, 6639 bytes
+2024/11/14-14:25:13.728 aa3 Compacted 4@0 + 1@1 files => 6639 bytes
+2024/11/14-14:25:13.729 aa3 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/11/14-14:25:13.729 aa3 Delete type=2 #34
+2024/11/14-14:25:13.729 aa3 Delete type=2 #40
+2024/11/14-14:25:13.729 aa3 Delete type=2 #43
+2024/11/14-14:25:13.729 aa3 Delete type=2 #37
+2024/11/14-14:25:13.729 aa3 Delete type=2 #45
