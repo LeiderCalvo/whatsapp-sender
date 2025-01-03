@@ -18,30 +18,30 @@ const client = new Client({
 
 client.on("auth_failure", console.error);
 
-client.on("qr", (qr) => {
+client.on("qr", async (qr) => {
   console.info("qr code launched");
-  console.info({ info: Client.info, state: Client.getState });
+  console.info({ info: client.info, state: await client.getState() });
   qrcode.generate(qr, { small: true });
 });
 
-client.on("change_state", (state) => {
+client.on("change_state", async (state) => {
   console.info("change_state");
-  console.info({ newState: state, info: Client.info, state: Client.getState });
+  console.info({ newState: state, info: client.info, state: await client.getState() });
 });
 
-client.on("authenticated", (session) => {
+client.on("authenticated", async (session) => {
   console.info("authenticated");
-  console.info({ session, info: Client.info, state: Client.getState });
+  console.info({ session, info: client.info, state: await client.getState() });
 });
 
-client.on("disconnected", (reason) => {
+client.on("disconnected", async (reason) => {
   console.info("disconnected");
-  console.info({ reason, info: Client.info, state: Client.getState });
+  console.info({ reason, info: client.info, state: await client.getState() });
 });
 
-client.on("remote_session_saved", () => {
+client.on("remote_session_saved", async () => {
   console.info("remote_session_saved");
-  console.info({ info: Client.info, state: Client.getState });
+  console.info({ info: client.info, state: await client.getState() });
 });
 
 client.on("ready", async () => {

@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 2025/01/02-14:23:42.749 a6d Reusing MANIFEST /home/runner/work/whatsapp-sender/whatsapp-sender/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-046811
 2025/01/02-14:23:42.752 a6d Recovering log #52889
 2025/01/02-14:23:42.812 a6d Reusing old log /home/runner/work/whatsapp-sender/whatsapp-sender/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/052889.log 
@@ -818,3 +819,35 @@
 2025/01/02-14:28:58.264 aa2 Generated table #53294@0: 1723 keys, 34508 bytes
 2025/01/02-14:28:58.264 aa2 Compacted 1@0 + 1@1 files => 311898 bytes
 2025/01/02-14:28:58.265 aa2 compacted to: files[ 0 3 44 71 0 0 0 ]
+=======
+2025/01/03-15:54:37.056 fc03 Reusing MANIFEST /Users/leider.gomez/Documents/personal/whatsapp-sender/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/01/03-15:54:37.058 fc03 Recovering log #1673
+2025/01/03-15:54:37.109 fc03 Reusing old log /Users/leider.gomez/Documents/personal/whatsapp-sender/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/001673.log 
+2025/01/03-15:54:39.466 a203 Compacting 1@1 + 3@2 files
+2025/01/03-15:54:39.545 a203 Generated table #1688@1: 48697 keys, 2212417 bytes
+2025/01/03-15:54:39.631 a203 Generated table #1689@1: 41301 keys, 2212745 bytes
+2025/01/03-15:54:39.705 a203 Generated table #1690@1: 35300 keys, 2184582 bytes
+2025/01/03-15:54:39.705 a203 Compacted 1@1 + 3@2 files => 6609744 bytes
+2025/01/03-15:54:39.744 a203 compacted to: files[ 0 0 40 0 0 0 0 ]
+2025/01/03-15:54:39.746 a203 Delete type=2 #1672
+2025/01/03-15:54:39.746 a203 Delete type=2 #1671
+2025/01/03-15:54:39.746 a203 Delete type=2 #1670
+2025/01/03-15:54:39.746 a203 Delete type=2 #1675
+2025/01/03-15:54:40.127 1f303 Level-0 table #1692: started
+2025/01/03-15:54:40.154 1f303 Level-0 table #1692: 325289 bytes OK
+2025/01/03-15:54:40.212 1f303 Delete type=0 #1673
+2025/01/03-15:54:40.229 1f303 Manual compaction at level-0 from '\x00!\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00"\x00\x00\x00' @ 0 : 0; will stop at '\x00!\x00\x00\x05' @ 4374019 : 1
+2025/01/03-15:54:40.229 1f303 Compacting 1@0 + 0@1 files
+2025/01/03-15:54:40.368 1f303 Generated table #1693@0: 6551 keys, 58949 bytes
+2025/01/03-15:54:40.394 1f303 Generated table #1694@0: 5535 keys, 140054 bytes
+2025/01/03-15:54:40.394 1f303 Compacted 1@0 + 0@1 files => 199003 bytes
+2025/01/03-15:54:40.433 1f303 compacted to: files[ 0 2 40 0 0 0 0 ]
+2025/01/03-15:54:40.434 1f303 Delete type=2 #1692
+2025/01/03-15:54:40.434 1f303 Manual compaction at level-0 from '\x00!\x00\x00\x05' @ 4374019 : 1 .. '\x00"\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/01/03-15:54:43.008 1f303 Compacting 1@1 + 1@2 files
+2025/01/03-15:54:43.075 1f303 Generated table #1695@1: 48734 keys, 2213575 bytes
+2025/01/03-15:54:43.076 1f303 Compacted 1@1 + 1@2 files => 2213575 bytes
+2025/01/03-15:54:43.115 1f303 compacted to: files[ 0 1 40 0 0 0 0 ]
+2025/01/03-15:54:43.117 1f303 Delete type=2 #1693
+2025/01/03-15:54:43.117 1f303 Delete type=2 #1688
+>>>>>>> Stashed changes

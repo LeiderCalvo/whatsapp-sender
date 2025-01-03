@@ -23,7 +23,7 @@ const getBirthdayPeople = (members) => {
 
 const getMessage = (people) => {
   const birthdayPeople = people.reduce(
-    (prev, current) => prev + `\n🎂 *${current.fullName}*`,
+    (prev, current) => prev + `\n🎂 *${current.fullName.trim()}*`,
     ""
   );
 
@@ -50,12 +50,14 @@ const getMessage = (people) => {
   `;
 };
 
-const birthdayNotifier = (WpClient) => {
+const birthdayNotifier = async (WpClient) => {
   const birthdayPeople = getBirthdayPeople(members);
   if (birthdayPeople.length <= 0) return;
-
+  
   const message = getMessage(birthdayPeople);
-  WpClient.sendMessage(`120363311402211353@g.us`, message);
+  const response = await WpClient.sendMessage(`120363311402211353@g.us`, message);
+  console.log(response);
+  
 };
 
 export default birthdayNotifier;
