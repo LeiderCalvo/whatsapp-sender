@@ -1,15 +1,2 @@
-2025/01/06-14:25:13.999 aa6 Reusing MANIFEST /home/runner/work/whatsapp-sender/whatsapp-sender/.wwebjs_auth/session/Default/Local Storage/leveldb/MANIFEST-000001
-2025/01/06-14:25:14.000 aa6 Recovering log #81
-2025/01/06-14:25:14.001 aa6 Reusing old log /home/runner/work/whatsapp-sender/whatsapp-sender/.wwebjs_auth/session/Default/Local Storage/leveldb/000081.log 
-2025/01/06-14:26:14.609 aa7 Level-0 table #85: started
-2025/01/06-14:26:14.610 aa7 Level-0 table #85: 15854 bytes OK
-2025/01/06-14:26:14.611 aa7 Delete type=0 #81
-2025/01/06-14:26:14.611 aa7 Compacting 4@0 + 1@1 files
-2025/01/06-14:26:14.613 aa7 Generated table #86@0: 565 keys, 9835 bytes
-2025/01/06-14:26:14.613 aa7 Compacted 4@0 + 1@1 files => 9835 bytes
-2025/01/06-14:26:14.613 aa7 compacted to: files[ 0 1 1 0 0 0 0 ]
-2025/01/06-14:26:14.613 aa7 Delete type=2 #75
-2025/01/06-14:26:14.613 aa7 Delete type=2 #82
-2025/01/06-14:26:14.613 aa7 Delete type=2 #79
-2025/01/06-14:26:14.613 aa7 Delete type=2 #73
-2025/01/06-14:26:14.613 aa7 Delete type=2 #85
+2025/01/08-11:54:15.410 a603 Creating DB /Users/leider.gomez/Documents/personal/whatsapp-sender/.wwebjs_auth/session/Default/Local Storage/leveldb since it was missing.
+2025/01/08-11:54:15.491 a603 Reusing MANIFEST /Users/leider.gomez/Documents/personal/whatsapp-sender/.wwebjs_auth/session/Default/Local Storage/leveldb/MANIFEST-000001
