@@ -1,9 +1,7 @@
 
 name: Daily cron-job
 
-on:
-  schedule:
-    - cron: "0 14 * * *"
+on: push
 
 jobs:
   cron:
