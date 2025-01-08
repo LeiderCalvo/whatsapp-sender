@@ -52,12 +52,16 @@ const getMessage = (people) => {
 
 const birthdayNotifier = async (WpClient) => {
   const birthdayPeople = getBirthdayPeople(members);
-  if (birthdayPeople.length <= 0) return;
-  
+  if (birthdayPeople.length <= 0) {
+    console.info("Not birthday people today")
+    return;
+  }
+
   const message = getMessage(birthdayPeople);
+  console.info("sending message")
   const response = await WpClient.sendMessage(`120363311402211353@g.us`, message);
-  console.log(response);
-  
+  console.info(response);
+
 };
 
 export default birthdayNotifier;
