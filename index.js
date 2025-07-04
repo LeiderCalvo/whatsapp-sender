@@ -49,24 +49,27 @@ client.on("ready", async () => {
 
   switch (job) {
     case "all":
-      birthdayNotifier(client);
-      loveNotifier(client);
+      await birthdayNotifier(client);
+      await loveNotifier(client);
       break;
 
     case "cm:birthdays":
-      birthdayNotifier(client);
+      await birthdayNotifier(client);
       break;
 
     case "personal:love":
-      loveNotifier(client);
+      await loveNotifier(client);
       break;
 
     default:
       break;
   }
 
+  console.info("Client 5 minute to finish!");
   const fiveMinutesInMills = 60 * 5 * 1000;
   setTimeout(() => process.exit(0), fiveMinutesInMills);
 });
 
-client.initialize();
+console.log("prev initialize");
+await client.initialize();
+console.log("post initialize");

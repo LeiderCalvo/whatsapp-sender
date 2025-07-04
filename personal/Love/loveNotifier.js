@@ -6,9 +6,12 @@ const getMessage = () => {
   return randomMessage;
 };
 
-const loveNotifier = (WpClient) => {
+const loveNotifier = async (WpClient) => {
   const message = getMessage();
-  WpClient.sendMessage(`573136875700@c.us`, message);
+  console.log("message", message);
+  
+  const response = await WpClient.sendMessage(`573136875700@c.us`, message);
+  console.info(response);
 };
 
 export default loveNotifier;
