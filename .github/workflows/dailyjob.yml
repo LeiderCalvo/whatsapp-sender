@@ -1,43 +1,43 @@
 
-name: Daily cron-job
+# name: Daily cron-job
 
-on:
-  schedule:
-    - cron: "0 14 * * *"
+# on:
+#   schedule:
+#     - cron: "0 14 * * *"
 
-jobs:
-  cron:
-    runs-on: ubuntu-22.04
+# jobs:
+#   cron:
+#     runs-on: ubuntu-22.04
 
-    steps:
-      - name: checkout
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
+#     steps:
+#       - name: checkout
+#         uses: actions/checkout@v3
+#         with:
+#           fetch-depth: 0
 
-      - name: setup node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 23.5.0
+#       - name: setup node
+#         uses: actions/setup-node@v3
+#         with:
+#           node-version: 23.5.0
 
-      - name: install project dependencies
-        shell: bash
-        run: npm install --frozen-lockfile
+#       - name: install project dependencies
+#         shell: bash
+#         run: npm install --frozen-lockfile
 
-      - name: update apt-get installer
-        run: sudo apt-get update
+#       - name: update apt-get installer
+#         run: sudo apt-get update
 
-      - name: install puppeteer dependencies
-        run: sudo apt install -y gconf-service libgbm-dev libasound2 libatk1.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils wget
+#       - name: install puppeteer dependencies
+#         run: sudo apt install -y gconf-service libgbm-dev libasound2 libatk1.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils wget
 
-      - name: send message
-        run: npm run cm:birthdays
+#       - name: send message
+#         run: npm run cm:birthdays
 
-      - name: Commit report
-        run: |
-          git config --global user.name 'LeiderCalvo'
-          git config --global user.email 'leiderstivencalvogomez@hotmail.com'
-          git add .
-          git commit -am "workflow: update session"
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-          git push
+#       - name: Commit report
+#         run: |
+#           git config --global user.name 'LeiderCalvo'
+#           git config --global user.email 'leiderstivencalvogomez@hotmail.com'
+#           git add .
+#           git commit -am "workflow: update session"
+#           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+#           git push
